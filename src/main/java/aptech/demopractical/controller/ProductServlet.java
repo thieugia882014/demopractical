@@ -38,7 +38,7 @@ public class ProductServlet extends HttpServlet {
         Product food = new Product();
         food.setName(name);
 
-        food.setPrice(price);
+        food.setSalary(price);
         HashMap<String, String> errors;
 
 

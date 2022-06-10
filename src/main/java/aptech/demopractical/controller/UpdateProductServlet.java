@@ -70,7 +70,7 @@ public class UpdateProductServlet extends HttpServlet {
             System.err.println(e);
         }
         obj.setName(name);
-        obj.setPrice(price);
+        obj.setSalary(price);
         if (Boolean.TRUE.equals(productService.update(id, obj).execute().body())) {
             resp.sendRedirect("/products");
         } else {
