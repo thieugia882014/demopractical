@@ -3,8 +3,10 @@
 <%@ page import="java.util.HashMap" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%
+    String success = (String) request.getAttribute("success");
+    String failure = (String) request.getAttribute("failure");
+    Product product = (Product) request.getAttribute("product");
     HashMap<String,String> errros = (HashMap<String,String>) request.getAttribute("errors");
-    Product product = null;
     if (product == null) {
         product = new Product();
         product.setId(0);

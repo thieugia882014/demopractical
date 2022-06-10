@@ -63,7 +63,7 @@
         </td>
         <td><%=obj.getName()%>
         </td>
-        <td><%=obj.getPrice()%>
+        <td><%=obj.getPrice()%> VND
         </td>
         <td><a href="/products/edit?id=<%=obj.getId()%>">Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;</td>
         <td><a href="/products/delete?id=<%=obj.getId()%>" class="btn-delete">Delete</a>&nbsp;&nbsp;|&nbsp;&nbsp;</td>

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.math.BigDecimal;
 
-@WebServlet(name = "UpdateProductServlet", value = "/products/update")
+@WebServlet(name = "UpdateProductServlet", value = "/products/edit")
 public class UpdateProductServlet extends HttpServlet {
     ProductService productService = RetrofitServiceGenerator.createService(ProductService.class);
 
